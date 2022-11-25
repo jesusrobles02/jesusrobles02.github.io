@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Portafolio del Aprendiz</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.ico" />
+</head>
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="img Jr/580b57fbd9996e24bc43be10.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="img Jr/580b57fbd9996e24bc43be10.png" alt="logo"/></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="icon-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control text-white" id="navbar-search-input" placeholder="Busqueda nueva.." aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notificaciones</p>
+              
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Configuración</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Mensaje Privado
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+
+⁡⁢⁣<!--𝗜𝗠𝗔𝗚𝗘𝗡 𝗣𝗘𝗥𝗙𝗜𝗟 𝗗𝗘𝗟 𝗨𝗦𝗨𝗔𝗥𝗜𝗢-->
+⁡              <img src="img Jr/jhorman.jpg" alt="profile"/>
+
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Configuración
+              </a>
+              <a class="dropdown-item" href="index.html">
+                <i class="ti-power-off text-primary"></i>
+                Cerrar Sesión
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="ti-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close ti-close"></i>
+          <p class="settings-heading">Color de Barra Lateral</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Claro</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Oscuro</div>
+          <p class="settings-heading mt-2">Color de Cabezera</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Portafolio Aprendiz</span>
+            </a>
+          </li>
+
+⁡⁢⁣⁢<!--PORTAFOLIO DE ACTIVIDADES-->
+
+⁡          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Python</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Actividades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/python.pdf">Que es Python</a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ejemplo Proyecto1.py">Ejemplo Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ejemplo Proyecto2.py">Ejemplo Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ejemplo Proyecto3.py.py">Ejemplo Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto1 (1).py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto2 (1).py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto3 (1).py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto4 (1).py">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto5 (1).py">Proyecto 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto6 (1).py">Proyecto 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto7.py">Proyecto 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto8.py">Proyecto 8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto9.py">Proyecto 9</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto10.py">Proyecto 10</a></li>
+                <li> <a>Actividad 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto1x.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto2x.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto3x.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto4x.py">Proyecto 4</a></li>
+                <li> <a>Actividad 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto1.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto2.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto3.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto4.py">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto5.py">Proyecto 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto6.py">Proyecto 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Proyecto7.py">Proyecto 7</a></li>
+                <li> <a>Actividad 5</a></li>
+                <li> <a>FOR</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoFor1.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoFor2.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoFor3.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoFor4.py">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoFor5.py">Proyecto 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoFor6.py">Proyecto 6</a></li>
+                <li> <a>WHILE</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoWhile1.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoWhile2.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoWhile3.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoWhile4.py">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoWhile5.py">Proyecto 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/ProyectoWhile6.py">Proyecto 6</a></li>
+                <li> <a>Actividad 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/estructuras de datos.docx">Estructura de datos</a></li>
+                <li> <a>Actividad 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad1.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad2.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad3.py">Proyecto 3</a></li>
+                <li> <a>Actividad 8</a></li>
+                <li> <a>Listas Vacias</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 9/Actividad 9/lista-de-colores.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 9/Actividad 9/lista-de-lenguaje-programacion.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 9/Actividad 9/lista-de-libros.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 9/Actividad 9/lista-deplatas-medicinales.py">Proyecto 4</a></li>
+                <li> <a>Actividad 9</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad10/Actividad10/lista-de-aprendices.py">Proyecto 1</a></li>
+                <li> <a>Actividad 10</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad11/Actividad11/datos-de-vehiculos.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad11/Actividad11/datos-facturacion.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad11/Actividad11/lista-de-aprendices2.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad11/Actividad11/tienda-de-peliculas.py">Proyecto 4</a></li>
+                <li> <a>Actividad 11</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 12 - Python/Diccionario-1.py">Proyecto 1</a></li>
+                <li> <a>Actividad 12</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 13 - Python/Actividad-1.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 13 - Python/Actividad-2.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Actividad 13 - Python/Actividad-3.py">Proyecto 3</a></li>
+                <li> <a>Examen</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Examen/Ejercicio1.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Examen/Ejercico2.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Examen/Ejercico3.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Examen/Ejercico4.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Examen/Ejercico5.py">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Examen/Ejercico6.py">Proyecto 5</a></li>
+                <li> <a>Nivelacion Examen</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Nivelacion Examen/punto 1.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Nivelacion Examen/punto 2.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Nivelacion Examen/punto 3.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Nivelacion Examen/punto 4.py">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/Nivelacion Examen/punto 5.py">Proyecto 5</a></li>
+                <li> <a>Actividad 12</a></li>
+                <li> <a>Algoritmo con Parametros</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/PARAMETRO/PARAMETRO/area de un circulo con parametro copy.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/PARAMETRO/PARAMETRO/area de un cuadrado con parametro.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/PARAMETRO/PARAMETRO/area del rectagulo con parametro.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/PARAMETRO/PARAMETRO/area del triangulo con parametros.py">Proyecto 4</a></li>
+                <li> <a>Algoritmo sin Parametros</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/SIN PARAMETRO/SIN PARAMETRO/area de un circulo sin parametros.py">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/SIN PARAMETRO/SIN PARAMETRO/area de un cuadrado sin parametro.py">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/SIN PARAMETRO/SIN PARAMETRO/area del rectagulo sin parametro.py">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="python/SIN PARAMETRO/SIN PARAMETRO/area del triangulo sin parametro.py">Proyecto 4</a></li>
+              </ul>
+            </div>
+          </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Pseudocodigo</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Actividades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Fiebree.psc">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/operaciones.psc">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Par_e_imparr.psc">Proyecto 3</a></li>
+                <li> <a>Actividad 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/29 ago/29 ago/multiplicacion.psc">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/29 ago/29 ago/numeros del 1 al 100.psc">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/29 ago/29 ago/numeros del 100 al 1.psc">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/29 ago/29 ago/Numeros Impares.psc">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/29 ago/29 ago/Numeros pares hasta el 100.psc">Proyecto 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/29 ago/29 ago/suma de los numeros del 1 al 100.psc">Proyecto 6</a></li>
+                <li> <a>Actividad 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Actividad  2 N_PARES_1_AL_10.psc">Proyecto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Actividad 1 N_1_AL_10.psc">Proyecto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Actividad 3 Usuario_Iterativo.psc">Proyecto 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Actividad 3 Usuario_Iterativo_decremente.psc">Proyecto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Actividad 4 N_IMPARES_1_10.psc">Proyecto 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Actividad 6 SUMA_N_1_AL_100.psc">Proyecto 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Actividad 6-(2) SUMA_1_AL_100.psc">Proyecto 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Multiplicacion_1_al_100.psc">Proyecto 8</a></li>
+                <li> <a>Actividad 4</a></li>
+                <li> <a>Contadores y acumuladores</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/Contadores y acumuladores taller.docx">Taller</a></li>
+                <li> <a>Actividad 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/fundamentos de programacion.docx">Fundamentos de Programacion</a></li>
+                <li> <a>Actividad 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/calcularpromedio.psc">Punto 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/sumaDosNumeros.psc">Punto 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/calcularnumeroalcuadrado.psc">Punto 3</a></li>
+                <li> <a>Actividad 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 1 saludo de usuario.psc">Punto 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 2 area del rectangulo.psc">Punto 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 3 perimetro del rectangulo.psc">Punto 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/activida 4 dolares a pesos.psc">Punto 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 5 calculadora.psc">Punto 8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/avtividad 6 Calcular Area Del Circulo.psc">Punto 9</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 7 Salario Minimo Con Descuento.psc">Punto 10</a></li>
+                <li> <a>Actividad 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/ACTIVIDADES .docx">Taller</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 1  Calcular Doble y Triple de un número.psc">Punto 11</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/avtividad 2 Grados Fahrenheit A Celsius.psc">Punto 12</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 3 Minutos a Horas.psc">Punto 13</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 4 Descuento De Compra.psc">Punto 14</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 5 Raizcuadrada Raizcubica.psc">Punto 15</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 6 Prestamo Bancario.psc">Punto 16</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/actividad 7 empleado.psc">Punto 17</a></li>
+                <li> <a>Actividad 8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 18 Datos.psc">Punto 18</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 19 IMC_De_Una_Persona.psc">Punto 19</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 20 Hipotenusa.psc">Punto 20</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 21 Precio_Corte_De_Tela.psc">Punto 21</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 22 sueldo_de_empleado.psc">Punto 22</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 23 Terreno.psc">Punto 23</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 24 paralelograma.psc">Punto 24</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 25 kilo_a_libras.psc">Punto 25</a></li>
+                <li> <a>Actividad 9</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 26 positivo_negativo.psc">Punto 26</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 27 mayor_menor_10.psc">Punto 27</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 28 Temperatura.psc">Punto 28</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 29 aprovado_reprovado.psc">Punto 29</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 30 gastos_perdidas.psc">Punto 30</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 31 mayor_menor_edad.psc">Punto 31</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 32 par_impar.psc">Punto 32</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 33 primo_noprimo.psc">Punto 33</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 34 descuento.psc">Punto 34</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 35 cirujano.psc">Punto 35</a></li>
+                <li> <a>Actividad 10</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 36 vocales.psc">Punto 36</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/punto 37 dia_de_la_semana.psc">Punto 37</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 38 Meses.psc">Punto 38</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 39 calculadora.psc">Punto 39</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 40 perimetro_area.psc">Punto 40</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 41 kilogramos.psc">Punto 41</a></li>
+                <li> <a>Actividad 11</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 42 salario_de_trabajo.psc">Punto 42</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 43 Telecomunicaciones.psc">Punto 43</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 44 tienda_zapatos.psc">Punto 44</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 45 restaurante.psc">Punto 45</a></li>
+                <li> <a>Actividad 12</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 46 Almacen_de_Zaptos.psc">Punto 46</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/punto 47 Edades.psc">Punto 47</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 48 Edad_peso_y_altura.psc">Punto 48</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 49 Formula_IMC.psc">Punto 49</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pseudocodigo/PUNTO 50 Presion_Arterial.psc">Punto 50</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">HTML 5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Actividades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="form-elements">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/Actividad_10_HTML/Actividad_10_HTML/index.html">Formulario de Pacientes</a></li>
+                <li> <a>Actividad 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/Actividad_9_HTML/Actividad_9_HTML/index.html">Pagina de Peliculas</a></li>
+                <li> <a>Actividad 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/Actividad_8_HTML/Actividad_8_HTML/la lluvia.html">La lluvia 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/Actividad_8_HTML/Actividad_8_HTML/La_lluvia_diseño_de_sitio_web.html">La lluvia 2</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/ACTIDAD_6_HTML/ACTIDAD_6_HTML/la_lluvia3.html">La lluvia 3</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/Actividad_8_HTML/Actividad_8_HTML/Tipos_de_lluvia.html">La lluvia 4</a></li>
+                <li> <a>Actividad 4</a></li>
+                <li> <a>Elemento Linea y Elemento Bloque</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://youtu.be/1sruWtZTXOM">Video Youtube </a></li>
+                <li> <a>Actividad 4</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/introduccion de la web.pdf">Introduccion 1</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/introduccion de la web (2).pdf">Introduccion 2</a></li>
+                <li> <a>Actividad 5</a></li>
+                <li class="nav-item"><a class="nav-link" href="html 5/FUNDAMENTOS 2.docx">Taller</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">CSS 3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Actividades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/flexbox 2/flexbox 2/index.html">Flex Box 2</a></li>
+                <li> <a>Actividad 2</a></li>
+                <li> <a>Posicionamiento flotante</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Ejemplo 3 Posicionamiento Flotante/Ejemplo 3 Posicionamiento Flotante/index.html">Flex Box 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Ejemplo 4 Posicionamiento flotante/Ejemplo 4 Posicionamiento flotante/index.html">Flex Box 2</a></li>
+                <li> <a>Actividad 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Ejemplo 2 position/Ejemplo 2 position/absolute.html">Position Absolute</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Ejemplo 2 position/Ejemplo 2 position/fixed.html">Position Fixed</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Ejemplo 2 position/Ejemplo 2 position/index.html">Index</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Ejemplo 2 position/Ejemplo 2 position/relative.html">Position Relative</a></li>
+                <li> <a>Actividad 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Proyecto5/Proyecto5/index.html">Modelo de Cajas</a></li>
+                <li> <a>Actividad 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/PROYECTO3_CSS/PROYECTO3_CSS/index.html">Pagina la Pesquera</a></li>
+                <li> <a>Actividad 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/Ejemplo 1/index.html">Favico</a></li>
+                <li> <a>Actividad 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="css 3/CSS (1).png">CSS</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">JavaScript </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Actividades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo 8/Ejemplo 8/index.html">Datos de Usuario</a></li>
+                <li> <a>Actividad 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo 7/Ejemplo 7/index.html">Calculadora 3.0</a></li>
+                <li> <a>Actividad 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo 6/Ejemplo 6/index.html">Calculadora Multifuncion</a></li>
+                <li> <a>Actividad 4</a></li>
+                <li> <a>FOR</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo5/index.html">Numeros del 1 al 60</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo5/index3.html">Numeros Pares del 1 al 60</a></li>
+                <li> <a>WHILE</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo5/index2.html">Numeros Impares del 1 al 60</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo5/index4.html">Numeros del 1 al 60</a></li>
+                <li> <a>Actividad 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo 4/index.html">Indice de Masa Corporal</a></li>
+                <li> <a>Actividad 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/Ejemplo 3/index.html">Calculadora 1.0</a></li>
+                <li> <a>Actividad 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/ejemplo 2/index.html">Evaluar Fiebre</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/ejemplo 2/ejercicio2.html">Numero entre 10 y 100</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/ejemplo 2/ejercicio3.html">Positivo - Negativo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/ejemplo 2/ejercicio4.html">Aprobado - Reprovado</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/ejemplo 2/ejercicio5.html">Ganacia - Perdida</a></li>
+                <li> <a>Actividad 8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/App 1/index.html">Saludo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/App 2/index.html">Area de Un Rectangulo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/App 3/index.html">Perimetro de un Rectangulo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/App 4/index.html">Area de un Circulo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="javascript/App 5/index.html">Dolares en Pesos</a></li>             
+               </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Bootstrap 5 </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#hola" aria-expanded="false" aria-controls="hola">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Actividades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="hola">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/FitApp-fitapp/FitApp-fitapp/index.html">Pagina Smart Fit</a></li>
+                <li> <a>Actividad 2</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/Proyecto7/index.html">Pagina Super Mario</a></li>
+                <li> <a>Actividad 3</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/Proyecto5/index.html">Layout 12 columnas</a></li>
+                <li> <a>Actividad 4</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/Proyecto4/index.html">Breakpoints </a></li>
+                <li> <a>Actividad 5</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/Proyecto3/index.html">sistema de rejillas</a></li>
+                <li> <a>Actividad 6</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/Proyecto2/index.html">Sistema de Rejillas</a></li>
+                <li> <a>Actividad 7</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/Proyecto1/index.html">Container</a></li>
+                <li> <a>Actividad 8</a></li>
+                <li class="nav-item"> <a class="nav-link" href="bootstrap 5/Bootstrap.pdf">Taller Bootstrap</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">TKinder </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#bt" aria-expanded="false" aria-controls="bt">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">Actividades</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="bt">
+              <ul class="nav flex-column sub-menu">
+                <li> <a>Actividad 1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="">...</a></li>
+                </ul>
+            </div>
+          </li>
+         
+⁡⁢⁣⁢<!--SECCION DE REGISTRO E INICIO DE SESION-->
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">Registro de usuario</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
+              </ul>
+            </div>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin">
+              <div class="row">
+                <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                  <h3 class="font-weight-bold">Bienvenido, estamos en linea!</h3>
+                  <h6 class="font-weight-normal mb-0">Analisis y Desarrollo de Sistemas de Informacion <span class="text-primary">Sena Regional Sucre</span></h6>
+                </div>
+                <div class="col-12 col-xl-4">
+                 <div class="justify-content-end d-flex">
+                  <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+          </div>
+<!--𝗜𝗠𝗔𝗚𝗘𝗡 𝗗𝗘 𝗣𝗥𝗘𝗦𝗘𝗡𝗧𝗔𝗖𝗜𝗢𝗡 𝗚𝗥𝗔𝗗𝗢𝗦 𝗦𝗘𝗡𝗧𝗜𝗚𝗥𝗔𝗗𝗢𝗦-->          
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card ">
+              <div class="card tale-bg">
+                <div class="card-people mt-auto">
+                  <img src="img Jr/19362653.jpg" >
+                  <div class="weather-temp">
+                    <div class="d-flex">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin transparent text-center  ">
+              <div class="row">
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-tale">
+                    <div class="card-body">
+                      
+                      <img src="img Jr/main-qimg-4e60a68a42b5726ba930a16b8b0c2fdb.jpg" height="150px">
+
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-4 stretch-card transparent">
+                  <div class="card card-dark-blue">
+                    <div class="card-body">
+
+                      <img src="img Jr/Python-logo-notext.svg.png" height="150px">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--<div class="col-md-12 mb-4 mb-lg-5  stretch-card transparent">
+                  <div class="card card-light-white bg-inverse-success ">
+                    <div class="card-body ">
+
+                      <img src="img Jr/code-6127616_960_720.png" height="70px">
+
+                    </div>
+                  </div>
+                </div>-->
+            
+              <div class="row">
+                <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+                  <div class="card card-light-blue">
+                    <div class="card-body">
+
+                      <img src="img Jr/CSS3_logo_and_wordmark.svg.png" height="150px">
+
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-6 mb-4 mb-lg-0  stretch-card transparent">
+                  <div class="card card-light-danger">
+                    <div class="card-body">
+
+                      <img src="img Jr/HTML5_logo_and_wordmark.svg.png" height="150px">
+
+                    </div>
+                  </div>
+                </div>
+
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p class="card-title text-center form-control-lg ">Analisis y Desarrollo De Sistemas De Información</p>
+
+                  <p class="font-weight-500">La Tecnología en Análisis y Programación de Sistemas de Información estudia el análisis, desarrollo, adaptación, aplicación y programación de sistemas informáticos en una organización o comunidad, aportando a la solución de problemas en dichos sistemas, garantizando información oportuna y confiable.</p>
+                  
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title text-info ">CSS 3</p>
+
+                  <p class="font-weight-500 text-center">“Cascading Style Sheets” o mejor conocido como CSS 3 es un lenguaje de diseño gráfico que permite definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado. Es muy usado para establecer el diseño visual de los documentos web e interfaces de usuario escritas en HTML. <br>
+                  <img src="/img Jr/css-illustration.png" height="150px"></p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                 <div class="d-flex justify-content-between">
+                  <p class="card-title text-danger" >HTML 5</p>
+                 </div>
+                  <p class="font-weight-500 text-center">HTML5 es un estándar que sirve como referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado HTML) para la definición de contenido de una página web, como texto, imágenes, vídeos, juegos, entre otros…<br>
+                    <img src="img Jr/html-illustration.png" height="150px"</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p class="card-title text-center form-control-lg text-success">Pseudocodigo</p>
+
+                  <p class="font-weight-500">El pseudocódigo es un lenguaje de programación. Su principal función es la de representar por pasos la solución a un problema o algoritmo, de la forma más detallada posible, utilizando un lenguaje cercano al de programación. El pseudocódigo no puede ejecutarse en un ordenador ya que entonces dejaría de ser pseudocódigo, como su propio nombre indica, se trata de un código falso (pseudo = falso), es un código escrito para que lo entienda el ser humano y no la máquina.</p>
+                  
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title text-warning">Python</p>
+
+                  <p class="font-weight-500 text-center">es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Spotify, Panda3D, entre otros.​ Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma. 
+                  </p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body text-center">
+                 <div class="d-flex justify-content-between ">
+                  <p class="card-title text-warning">JavaScrip</p>
+                 </div>
+                  <p class="font-weight-500">JavaScript (o "JS") es un lenguaje de programación que se usa con mayor frecuencia para scripts dinámicos de lado del cliente en páginas web, JavaScript es uno de los lenguajes más utilizados en el mundo, debido al reciente crecimiento y mejora en el rendimiento de las APIs disponibles en los navegadores.                  
+                 <img src="img Jr/javascript-illustration.png" height="150px"></p>
+                </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card position-relative">
+                <div class="card-body">
+                  <div id="detailedReports" class="carousel slide detailed-report-carousel position-static pt-2" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                          <div class="col-md-12 col-xl-3 d-flex flex-column justify-content-start">
+                            <div class="ml-xl-4 mt-3">
+                            <p class="card-title">Portafolio</p>
+                              <h1 class="text-primary">Actividades Realizadas</h1>
+                            </div>  
+                            </div>
+                          <div class="col-md-12 col-xl-9">
+                            <div class="row">
+                              <div class="col-md-6 border-right">
+                                <div class="table-responsive mb-3 mb-md-0 mt-3">
+                                  <table class="table table-borderless report-table">
+                                    <tr>
+                                      <td class="text-muted">Pseudocodigo</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-primary" role="progressbar" style="width: 14%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">14 Actividades</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Python</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">15 Actividades</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">JavaScript</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 8%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">8 Actividades </h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">CSS 3</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-info" role="progressbar" style="width: 8%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">8 Actividades</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">HTML 5</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-primary" role="progressbar" style="width: 10%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">10 Actividades</h5></td>
+                                    </tr>
+                                    <tr>
+                                      <td class="text-muted">Boopstrap 5</td>
+                                      <td class="w-100 px-0">
+                                        <div class="progress progress-md mx-4">
+                                          <div class="progress-bar bg-danger" role="progressbar" style="width: 10%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                      </td>
+                                      <td><h5 class="font-weight-bold mb-0">10 Actividades</h5></td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                              <img src="img Jr/cursos-desarrolladores-web-estudio-programacion-informatica-diseno-web-guion-codificacion-componentes-estructura-interfaz-aprendizaje-estudiante-informatica_335657-1161.jpg" height="400px">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-5 grid-margin stretch-card">
+							<div class="card">
+								</div>
+							</div>
+            </div>
+          </div>
+          
+            
+                <div class="col-md-12 stretch-card grid-margin grid-margin-md-0">
+                  <div class="card data-icon-card-primary">
+                    <div class="card-body">              
+                      <div class="row">
+                        <div class="col-8 text-white">
+                          <p class="text-white font-weight-500 mb-0">"La mayoría del software actual es muy parecido a una pirámide egipcia, con millones de ladrillos puestos unos encima de otros sin una estructura integral, simplemente realizada a base de fuerza bruta y miles de esclavos" </p>
+                        </div>
+                        <img src="img Jr/sistemas.jpg" height="100px">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022. <a href="https://jesusrobles09.github.io/" target="_blank">Ing. Yorman Robles</a> Aprendiz en formación</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">SENA - CITS <i class="ti-heart text-danger ml-1"></i></span>
+          </div>
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Programa <a href="https://www.themewagon.com/" target="_blank">ADSI</a></span> 
+          </div>
+        </footer> 
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>   
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

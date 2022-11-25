@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+
+    <title>Calculadora</title>
+
+</head>
+<body>
+
+    <h1>Calculadora Multifunción</h1>
+    <br>
+
+    <img src="img/calculadora.png" height="350">
+
+
+    <form>
+      <input id="num1" type="number" / style="background-color:#ffffff ;" placeholder="Digite el 1Er número" ><br><br>
+      <input id="num2" type="number" / style="background-color:#ffffff ;" placeholder="Digite el 2Do número" >
+
+
+        <p id="resultado" style="color: green;"></p>
+        <br><br>
+        <input type="button" value="SUMAR" onclick="operaciones('sumar'); return false;" /><br><br>
+        <input type="button" value="RESTAR" onclick="operaciones('restar'); return false;" /><br><br>
+        <input type="button" value="MULTIPLICAR" onclick="operaciones('multiplicar'); return false;" /><br><br>
+        <input type="button" value="DIVIDIR" onclick="operaciones('dividir'); return false;" />
+    </form>
+
+    <div>
+        <script src="js\app1.js"></script>
+    </div>
+    
+</body>
+</html>

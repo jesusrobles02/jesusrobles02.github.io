@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif ;
+    margin: auto;
+    text-align: center;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 1%, rgba(9,9,121,1) 53%, rgba(0,212,255,1) 97%);
+color: #fff;
+}
+
+nav{
+    text-align: center;
+}
+
+.logo{
+    width: 192px; 
+  height: 192px; 
+  display:block; 
+  margin:auto;   
+  margin-bottom: 12px;
+
+}
+
+h1{
+    text-align: center;
+    border-radius: 20px;
+    background-color:#00a6fb;
+    color: #fff;
+}
+
+  section img { 
+    width: 260px;
+    height: 260px;
+    margin: 12px;
+    border-radius: 20px;
+  }
+
+  p{          
+    background-color: #4299e1;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    color: #fff;
+    padding: 16px;
+    line-height: 24px;
+    border-radius: 12px;
+  }
+
+ span{ 
+    border: 1px solid #fff;     
+    border-radius:4px;         
+    font-weight: bold;         
+    padding: 4px; 
+  }
+
+  #Menu{
+    background-color: #0004ff;
+    margin: 16px;
+    margin-bottom: 12px;
+    color: #fff;
+    border: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  li{
+    text-align: justify;
+  }
+
+  h2{
+    text-align: center;
+    border-radius: 20px;
+    background-color:#00a6fb;
+    color: #fff;
+  }

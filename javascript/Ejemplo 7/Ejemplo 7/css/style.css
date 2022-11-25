@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(27deg, #6CB3E1 50%, #4C9DCC 50%) ;
+    text-align: center;
+}
+
+.form-body{ 
+    width: 400px;
+    min-width: 300px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin: 10px;
+}
+
+.form-body img{
+    display: block;
+    margin: 20px auto;
+}
+
+.form-body .text{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-body input[type="Number"]{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 75%;
+    padding-left: 10px;
+    color: white;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #4C9DCC;
+    text-align: center;
+    
+}
+
+.form-body input[name="n2"]{
+    margin-top: 20px;
+}
+
+.form-body input[type="button"]{
+    margin-top: 20px;
+    background-color:#4C9DCC;
+    border: 1px solid black;
+}
+
+::placeholder{
+    font-size: 1rem;
+    color:rgba(255, 255, 255, 596)
+}
+
+.form-body input[type="Number"]:hover{
+    transition: .5s;
+    border: 1px solid white;
+    color: white;
+}
+
+.form-body input[type="button"]{
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 78%;
+    background-color: #ffd000;
+    color: black;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    outline: none;
+    transition: all .5s ease;
+}
+
+.form-body input[type="button"]:hover{
+    transition: .5s;
+    border: 1px solid white;
+    color: white;
+}
+
+
+img{
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+p{
+    background-color: red;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}

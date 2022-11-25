@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    background-color :#8d99ae ;
+    color: ade8f4;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1{
+    background-color:#ffffff ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+h2{
+    background-color:#ffffff ;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+a{
+    background-color:#ffffff ;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    padding: 5px;
+    border-radius: 70px;
+
+}
+
+div{
+    background-color:#90e0ef ;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}

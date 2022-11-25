@@ -1,0 +1,35 @@
+body{
+    background-color:#49b6ff ;
+}
+
+h1{
+    text-align:center;
+
+}
+
+p{
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: #9d4edd;
+    color: white;
+    border-radius: 40px;
+    padding: 5px;
+    width: 350px;
+
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+
+.app{
+    background-color: #c8b6ff;
+    color: white;
+    width: 300px;
+    border-radius: 100px;
+    padding: 5px;
+    display: block;
+    margin: auto;
+}
